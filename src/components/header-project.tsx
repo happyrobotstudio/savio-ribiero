@@ -95,7 +95,7 @@ const HeaderProject = ({ title, areas, description = ``, date }: HeaderProjectPr
             >
               {avatar?.file?.childImageSharp?.fixed && <Img fixed={avatar.file.childImageSharp.fixed} />}
             </div>
-            <span sx={{ fontWeight: `medium` }}>{name}</span>
+            <span sx={{ fontWeight: `medium` }}>{/*name*/}</span>
           </Link>
         </animated.div>
         <div sx={{ mt: 4, mb: [6, 6, 7] }}>
