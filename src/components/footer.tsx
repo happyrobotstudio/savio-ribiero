@@ -136,8 +136,7 @@ const Footer = () => {
                 sx={{
                   position: `relative`,
                   color: `#FFF`,
-                  backgroundColor: isDark ? `toggleIcon` : `transparent`,
-                  transform: isDark ? `scale(0.55)` : `scale(1)`,
+                  backgroundColor: `#000`,
                   transition: `all 0.45s ease`,
                   overflow: isDark ? `visible` : `hidden`,
                   fontSize: `0.95rem`,
