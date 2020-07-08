@@ -130,7 +130,7 @@ const Header = () => {
             {/* <ColorModeToggle isDark={isDark} toggle={toggleColorMode} /> */}
           </animated.div>
           
-          <div data-testid="social-header" sx={{ mt: 44, mb: 6, a: { mx: 2 } }}>
+          <div data-testid="social-header" sx={{ mt: 225, mb: 6, a: { mx: 2 } }}>
             {/* <animated.div style={fadeLongProps}>
               <SocialMediaList />
             </animated.div> */}
