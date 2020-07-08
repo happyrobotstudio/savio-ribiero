@@ -49,7 +49,7 @@ const Footer = () => {
       }}
     >
       <Container>
-        <div sx={{ display: `grid`, gridGap: 4, gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `2fr 1fr`] }}>
+        <div sx={{ display: `grid`, gridGap: 4, mt: 100, gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `2fr 1fr`] }}>
           <div
             sx={{
               p: { mb: 0 },
@@ -92,7 +92,7 @@ const Footer = () => {
             color: `text`,
             fontWeight: `semibold`,
             a: { color: `text` },
-            mt: 70,
+            mt: 90,
           }}
         >
 
@@ -149,7 +149,7 @@ const Footer = () => {
             <div 
               sx={{ mx: 1, 
                 textAlign: `center`,
-                mt: 45,
+                mt: 75,
               }}
               > 
                 {avatar?.file?.childImageSharp?.fixed && <Img sx={{ top: `8px`, marginRight: `5px` }} fixed={avatar.file.childImageSharp.fixed} />} 
