@@ -2,6 +2,7 @@
 import React from "react"
 import { jsx, useColorMode } from "theme-ui"
 import BGPattern from "../assets/bg-pattern"
+import ColorModeToggle from "./colormode-toggle"
 
 const HeaderBackground = () => {
   const [colorMode] = useColorMode()

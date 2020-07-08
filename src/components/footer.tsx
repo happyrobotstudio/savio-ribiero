@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Box, jsx, Container, Flex, Link, useColorMode } from "theme-ui"
+import { Box, Heading, jsx, Container, Flex, Link, useColorMode } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import useEmiliaConfig from "../hooks/use-emilia-config"
@@ -70,7 +70,6 @@ const Footer = () => {
             }}
           >
 
-            {/* <ColorModeToggle isDark={isDark} toggle={toggleColorMode} /> */}
 
             <ProfileImage />
 
@@ -93,21 +92,17 @@ const Footer = () => {
             color: `text`,
             fontWeight: `semibold`,
             a: { color: `text` },
-            mt: 4,
+            mt: 70,
           }}
         >
 
 
 
           <div sx={{  }}>
-            
-            <h2 
-                sx={{
-                  color: `var(--theme-ui-colors-heading,#000)`,
-                }}
-                >
-                  Want to start your own project?
-            </h2>
+           
+            <Heading as="h1" variant="styles.h1">
+              Want to start your own project?
+            </Heading>
 
             <button
               type="button"
@@ -155,7 +150,7 @@ const Footer = () => {
             <div 
               sx={{ mx: 1, 
                 textAlign: `center`,
-                marginTop: `25px`,
+                mt: 45,
               }}
               > 
                 {avatar?.file?.childImageSharp?.fixed && <Img sx={{ top: `8px`, marginRight: `5px` }} fixed={avatar.file.childImageSharp.fixed} />} 
