@@ -105,7 +105,22 @@ const HeaderProject = ({ title, areas, description = ``, date }: HeaderProjectPr
             </Heading>
           </animated.div>
           <animated.div style={infoProps}>
-            <Styled.p sx={{ mb: 0, mt: 4 }}>{date}</Styled.p>
+
+            <h2
+              sx={{
+                color: `textMuted`,
+                fontWeight: `medium`,
+                letterSpacing: `widest`,
+                textTransform: `uppercase`,
+                fontSize: 1,
+                my: 0,
+                mt: 25,
+                mb: 25,
+              }}
+            >
+              {date}
+            </h2>
+
             <div>
               {areas.map((area, index) => (
                 <React.Fragment key={area}>

@@ -60,7 +60,6 @@ const Header = () => {
     <Flex as="header" variant="layout.projectHead">
       
       <HeaderBackground />
-      <Container sx={{ textAlign: `center`, my: 4, zIndex: 10 }}>
        
 
         <div sx={{ textAlign: `center`, my: 5, zIndex: 10 }}>
@@ -131,7 +130,7 @@ const Header = () => {
             {/* <ColorModeToggle isDark={isDark} toggle={toggleColorMode} /> */}
           </animated.div>
           
-          <div data-testid="social-header" sx={{ mt: 4, mb: 6, a: { mx: 2 } }}>
+          <div data-testid="social-header" sx={{ mt: 44, mb: 6, a: { mx: 2 } }}>
             {/* <animated.div style={fadeLongProps}>
               <SocialMediaList />
             </animated.div> */}
@@ -143,8 +142,6 @@ const Header = () => {
         </div>
 
 
-
-        </Container>
 
     </Flex>
   )
