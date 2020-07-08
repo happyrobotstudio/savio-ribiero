@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "emilia",
-  "description": "Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.",
+  "name": "SavioRibiero",
+  "description": "Photographer.",
   "version": "0.2.10",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "HappyRobot <hellp@happyrobot.studio>",
   "license": "MIT",
-  "starter-name": "gatsby-starter-portfolio-emilia",
+  "starter-name": "savio-ribiero",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -21,8 +21,10 @@
     "gatsby-plugin-google-analytics": "^2.1.13",
     "gatsby-plugin-manifest": "^2.2.13",
     "gatsby-plugin-netlify": "^2.1.11",
-    "gatsby-plugin-offline": "^3.0.1",
+    "gatsby-plugin-netlify-cms": "^4.3.10",
     "gatsby-plugin-sitemap": "^2.2.7",
+    "gatsby-plugin-offline": "^3.0.1",
+    "netlify-cms-app": "^2.12.16",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

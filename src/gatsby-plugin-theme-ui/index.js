@@ -11,7 +11,7 @@ export default merge(tailwind, {
     backgroundPattern: `#F1F4F7`,
     iconPrimary: tailwind.colors.gray[8],
     iconSecondary: tailwind.colors.gray[6],
-    textMuted: tailwind.colors.gray[7],
+    textMuted: tailwind.colors.gray[6],
     heading: tailwind.colors.black,
     toggleIcon: tailwind.colors.black,
     muted: tailwind.colors.gray[3],

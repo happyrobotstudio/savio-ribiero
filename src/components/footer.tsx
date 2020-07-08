@@ -6,6 +6,8 @@ import useEmiliaConfig from "../hooks/use-emilia-config"
 import SocialMediaList from "./social-media-list"
 import ColorModeToggle from "./colormode-toggle"
 import { ChildImageSharpFixed } from "../types"
+import ProfileImage from "./profileimage"
+
 // @ts-ignore
 import AboutMeMDX from "../texts/about-me"
 
@@ -22,13 +24,14 @@ const Footer = () => {
     query {
       file(name: { eq: "logo" }) {
         childImageSharp {
-          fixed(width: 40, height: 40, quality: 100) {
+          fixed(width: 30, height: 30, quality: 100) {
             ...GatsbyImageSharpFixed_withWebp
           }
         }
       }
     }
   `)
+  
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
   const toggleColorMode = (e: any) => {
@@ -58,6 +61,7 @@ const Footer = () => {
           >
             <AboutMeMDX />
           </div>
+          
           <Flex
             sx={{
               textAlign: [`center`, `center`, `center`, `right`],
@@ -65,13 +69,17 @@ const Footer = () => {
               justifyContent: `space-between`,
             }}
           >
-            <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
+
+            {/* <ColorModeToggle isDark={isDark} toggle={toggleColorMode} /> */}
+
+            <ProfileImage />
+
             <div sx={{ mt: [4, 4, 4, 0] }}>
               <div sx={{ a: { ml: [1, 1, 1, 2], mr: [1, 1, 1, 0] } }}>
                 <SocialMediaList />
-              </div>
-              <div sx={{ color: `textMuted` }}>Copyright &copy; {new Date().getFullYear()}. All rights reserved.</div>
+              </div>   
             </div>
+
           </Flex>
         </div>
       </Container>
@@ -79,6 +87,7 @@ const Footer = () => {
         <Container
           sx={{
             display: `flex`,
+            flexWrap: `wrap`,
             justifyContent: `center`,
             alignItems: `center`,
             color: `text`,
@@ -87,12 +96,77 @@ const Footer = () => {
             mt: 4,
           }}
         >
-         
 
-          {avatar?.file?.childImageSharp?.fixed && <Img fixed={avatar.file.childImageSharp.fixed} />}
-          
-          {` `}
-          <div sx={{ mx: 1 }}>Savio Ribiero</div>
+
+
+          <div sx={{  }}>
+            
+            <h2 
+                sx={{
+                  color: `var(--theme-ui-colors-heading,#000)`,
+                }}
+                >
+                  Want to start your own project?
+            </h2>
+
+            <button
+              type="button"
+              aria-label="Contact Savio"
+              title="Contact Savio"
+              sx={{
+                mt: 65,
+                mb: 185,
+                ml: `auto`,
+                mr: `auto`,
+                opacity: 1,
+                clear: `both`,
+                position: `relative`,
+                borderRadius: `25px`,
+                display: `flex`,
+                alignItems: `center`,
+                justifyContent: `center`,
+                transition: `opacity 0.3s ease`,
+                border: `none`,
+                background: `black`,
+                outline: `none`,
+                cursor: `pointer`,
+                padding: `15px 45px`,
+                appearance: `none`,
+                "&:hover, &:focus": { opacity: 0.75 },
+              }}
+            >
+              
+
+              <div
+                sx={{
+                  position: `relative`,
+                  color: `#FFF`,
+                  backgroundColor: isDark ? `toggleIcon` : `transparent`,
+                  transform: isDark ? `scale(0.55)` : `scale(1)`,
+                  transition: `all 0.45s ease`,
+                  overflow: isDark ? `visible` : `hidden`,
+                  fontSize: `0.95rem`,
+                }}
+              >
+                Contact Savio
+              </div>
+            </button>
+            
+            <div 
+              sx={{ mx: 1, 
+                textAlign: `center`,
+                marginTop: `25px`,
+              }}
+              > 
+                {avatar?.file?.childImageSharp?.fixed && <Img sx={{ top: `8px`, marginRight: `5px` }} fixed={avatar.file.childImageSharp.fixed} />} 
+                {` `} 
+                Savio Ribiero
+            </div>
+
+            <div sx={{ color: `textMuted`, textAlign: `center`, fontSize: `0.85em`, mt: 35, mb: 15 }}>Copyright &copy; {new Date().getFullYear()}. All rights reserved.</div>
+
+
+          </div>
          
         </Container>
       )}
