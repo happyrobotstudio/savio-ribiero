@@ -123,8 +123,8 @@ const HeaderProject = ({ title, areas, description = ``, date }: HeaderProjectPr
         </div>
 
         <animated.div style={toggleColorButtonProps} sx={{ position: `absolute`, top: 30, right: 30, }}>
-            <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
-          </animated.div>
+          {/* <ColorModeToggle isDark={isDark} toggle={toggleColorMode} /> */}
+        </animated.div>
 
 
       </Container>

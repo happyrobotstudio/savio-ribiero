@@ -128,7 +128,7 @@ const Header = () => {
 
           
           <animated.div style={toggleColorButtonProps} sx={{ position: `absolute`, top: 30, right: 30, }}>
-            <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
+            {/* <ColorModeToggle isDark={isDark} toggle={toggleColorMode} /> */}
           </animated.div>
           
           <div data-testid="social-header" sx={{ mt: 4, mb: 6, a: { mx: 2 } }}>
