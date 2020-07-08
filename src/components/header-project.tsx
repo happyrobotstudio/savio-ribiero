@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from "react"
-import { Flex, jsx, Container, Heading, Styled } from "theme-ui"
+import { Flex, jsx, useColorMode, Container, Heading, Styled } from "theme-ui"
 import { animated, useSpring, config } from "react-spring"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
@@ -9,6 +9,7 @@ import HeaderBackground from "./header-background"
 import LeftArrow from "../assets/left-arrow"
 import useEmiliaConfig from "../hooks/use-emilia-config"
 import { ChildImageSharpFixed } from "../types"
+import ColorModeToggle from "./colormode-toggle"
 
 type HeaderProjectProps = {
   title: string
@@ -36,6 +37,18 @@ const HeaderProject = ({ title, areas, description = ``, date }: HeaderProjectPr
       }
     }
   `)
+
+  const toggleColorButtonProps = useSpring({
+    // config: config.fast,
+    // from: { opacity: 0, transform: `translate3d(-30px, 0, 0)` },
+    // to: { opacity: 0.8, transform: `translate3d(0, 0, 0)` },
+  })
+  const [colorMode, setColorMode] = useColorMode()
+  const isDark = colorMode === `dark`
+  const toggleColorMode = (e: any) => {
+    e.preventDefault()
+    setColorMode(isDark ? `light` : `dark`)
+  }
 
   const titleProps = useSpring({
     config: config.slow,
@@ -108,6 +121,12 @@ const HeaderProject = ({ title, areas, description = ``, date }: HeaderProjectPr
             )}
           </animated.div>
         </div>
+
+        <animated.div style={toggleColorButtonProps} sx={{ position: `absolute`, top: 30, right: 30, }}>
+            <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
+          </animated.div>
+
+
       </Container>
     </Flex>
   )

@@ -31,14 +31,12 @@ const Header = () => {
   `)
 
   const toggleColorButtonProps = useSpring({
-    config: config.slow,
-    from: { opacity: 0, transform: `translate3d(-30px, 0, 0)` },
-    to: { opacity: 1, transform: `translate3d(0, 0, 0)` },
+    // config: config.fast,
+    // from: { opacity: 0, transform: `translate3d(-30px, 0, 0)` },
+    // to: { opacity: 0.8, transform: `translate3d(0, 0, 0)` },
   })
-
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
-  
   const toggleColorMode = (e: any) => {
     e.preventDefault()
     setColorMode(isDark ? `light` : `dark`)

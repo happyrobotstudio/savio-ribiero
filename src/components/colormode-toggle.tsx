@@ -17,7 +17,7 @@ const ColorModeToggle = ({ isDark, toggle }: Props) => (
       aria-label={isDark ? `Activate Light mode` : `Activate Dark mode`}
       title={isDark ? `Activate Light mode` : `Activate Dark mode`}
       sx={{
-        opacity: 0.65,
+        opacity: 1,
         position: `relative`,
         borderRadius: `5px`,
         width: `40px`,

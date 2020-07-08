@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Box, Heading, jsx, Container, Flex, Link, useColorMode } from "theme-ui"
+import { Box, Heading, jsx, useColorMode, Container, Flex, Link } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import useEmiliaConfig from "../hooks/use-emilia-config"
