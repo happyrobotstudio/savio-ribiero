@@ -163,7 +163,7 @@ const Footer = () => {
                 Savio Ribiero
             </div>
 
-            <div sx={{ color: `textMuted`, textAlign: `center`, fontSize: `0.85em`, mt: 35, mb: 15 }}>Copyright &copy; {new Date().getFullYear()}. All rights reserved.</div>
+            <div sx={{ color: `textMuted`, textAlign: `center`, fontSize: `0.75em`, mt: 35, mb: 15 }}>Copyright &copy; {new Date().getFullYear()}. All rights reserved.</div>
 
 
           </div>
