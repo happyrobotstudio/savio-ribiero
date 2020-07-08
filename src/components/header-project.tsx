@@ -64,7 +64,7 @@ const HeaderProject = ({ title, areas, description = ``, date }: HeaderProjectPr
 
   return (
     <Flex as="header" variant="layout.header">
-      {/* <HeaderBackground /> */}
+      <HeaderBackground />
       <Container sx={{ textAlign: `center`, my: 4, zIndex: 10 }}>
         <animated.div style={backButtonProps}>
           <Link
