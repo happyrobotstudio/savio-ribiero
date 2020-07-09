@@ -22,7 +22,7 @@ const Footer = () => {
   const { showThemeAuthor } = useEmiliaConfig()
   const avatar = useStaticQuery<AvatarStaticQuery>(graphql`
     query {
-      file(name: { eq: "logo" }) {
+      file(name: { eq: "avatar" }) {
         childImageSharp {
           fixed(width: 30, height: 30, quality: 100) {
             ...GatsbyImageSharpFixed_withWebp
@@ -151,12 +151,45 @@ const Footer = () => {
                 textAlign: `center`,
               }}
               > 
-                {avatar?.file?.childImageSharp?.fixed && <Img sx={{ top: `8px`, marginRight: `5px` }} fixed={avatar.file.childImageSharp.fixed} />} 
-                {` `} 
-                Savio Ribiero
+                <div 
+                  sx={{
+                    mt: 10,
+                    overflow: `hidden`,
+                    borderRadius: `30px`,
+                    height: [`30px`, `30px`],
+                    width: [`30px`, `30px`],
+                    display: `inline-block`,
+                    boxShadow: `lg`,
+                    "> div:not([data-placeholder='true'])": {
+                      height: [`30px !important`, `30px !important`],
+                      width: [`30px !important`, `30px !important`],
+                    },
+                  }}
+                  > 
+                    {avatar?.file?.childImageSharp?.fixed && <Img sx={{ top: `0px`, marginRight: `5px` }} fixed={avatar.file.childImageSharp.fixed} />} 
+                  
+                </div>
+
+                <p
+                  sx={{
+                    mt: 0,
+                  }}
+                >Savio Ribiero</p>
+                
+
             </div>
 
-            <div sx={{ color: `textMuted`, textAlign: `center`, fontSize: `0.75em`, mt: 25, mb: 15, fontWeight: 500 }}>Copyright &copy; {new Date().getFullYear()}. All rights reserved.</div>
+            <div 
+              sx={{ 
+                color: `textMuted`, 
+                textAlign: `center`, 
+                fontSize: `0.75em`, 
+                mt: 45, 
+                fontWeight: 500 
+              }}
+            >
+              Copyright &copy; {new Date().getFullYear()}. All rights reserved.
+              </div>
 
 
           </div>
