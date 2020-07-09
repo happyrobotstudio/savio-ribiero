@@ -98,7 +98,7 @@ const HeaderProject = ({ title, areas, description = ``, date }: HeaderProjectPr
             <span sx={{ fontWeight: `medium` }}>{/*name*/}</span>
           </Link>
         </animated.div>
-        <div sx={{ mt: 4, mb: 215 }}>
+        <div sx={{ mt: 4, mb: 260 }}>
           <animated.div style={titleProps}>
             <Heading as="h1" variant="styles.h1">
               {title}
