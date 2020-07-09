@@ -184,8 +184,8 @@ const Footer = () => {
                 color: `textMuted`, 
                 textAlign: `center`, 
                 fontSize: `0.75em`, 
-                mt: 45, 
-                fontWeight: 500 
+                mt: 45,
+                fontWeight: 400,
               }}
             >
               Copyright &copy; {new Date().getFullYear()}. All rights reserved.
