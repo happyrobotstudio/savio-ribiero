@@ -98,7 +98,7 @@ const HeaderProject = ({ title, areas, description = ``, date }: HeaderProjectPr
             <span sx={{ fontWeight: `medium` }}>{/*name*/}</span>
           </Link>
         </animated.div>
-        <div sx={{ mt: 4, mb: [6, 6, 7] }}>
+        <div sx={{ mt: 4, mb: 170 }}>
           <animated.div style={titleProps}>
             <Heading as="h1" variant="styles.h1">
               {title}
@@ -137,9 +137,9 @@ const HeaderProject = ({ title, areas, description = ``, date }: HeaderProjectPr
           </animated.div>
         </div>
 
-        <animated.div style={toggleColorButtonProps} sx={{ position: `absolute`, top: 30, right: 30, }}>
-          {/* <ColorModeToggle isDark={isDark} toggle={toggleColorMode} /> */}
-        </animated.div>
+        {/* <animated.div style={toggleColorButtonProps} sx={{ position: `absolute`, top: 30, right: 30, }}>
+          <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
+        </animated.div> */}
 
 
       </Container>

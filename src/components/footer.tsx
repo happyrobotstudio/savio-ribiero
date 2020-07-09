@@ -92,7 +92,7 @@ const Footer = () => {
             color: `text`,
             fontWeight: `semibold`,
             a: { color: `text` },
-            mt: 90,
+            mt: 140,
           }}
         >
 
@@ -110,7 +110,7 @@ const Footer = () => {
               title="Contact Savio"
               sx={{
                 mt: 65,
-                mb: 185,
+                mb: 215,
                 ml: `auto`,
                 mr: `auto`,
                 opacity: 1,
@@ -149,7 +149,6 @@ const Footer = () => {
             <div 
               sx={{ mx: 1, 
                 textAlign: `center`,
-                mt: 75,
               }}
               > 
                 {avatar?.file?.childImageSharp?.fixed && <Img sx={{ top: `8px`, marginRight: `5px` }} fixed={avatar.file.childImageSharp.fixed} />} 

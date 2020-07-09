@@ -67,6 +67,7 @@ const Header = () => {
             <div
               sx={{
                 overflow: `hidden`,
+                mt: 40,
                 borderRadius: `full`,
                 height: [`100px`, `140px`],
                 width: [`100px`, `140px`],
@@ -119,6 +120,7 @@ const Header = () => {
                 justifyContent: `center`,
                 alignItems: `center`,
                 color: `text`,
+                mb: 170,
               }}
             >
               Photography
@@ -126,17 +128,17 @@ const Header = () => {
           </animated.div>
 
           
-          <animated.div style={toggleColorButtonProps} sx={{ position: `absolute`, top: 30, right: 30, }}>
-            {/* <ColorModeToggle isDark={isDark} toggle={toggleColorMode} /> */}
+          {/* <animated.div style={toggleColorButtonProps} sx={{ position: `absolute`, top: 30, right: 30, }}>
+            <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
           </animated.div>
           
           <div data-testid="social-header" sx={{ mt: 225, mb: 6, a: { mx: 2 } }}>
-            {/* <animated.div style={fadeLongProps}>
+            <animated.div style={fadeLongProps}>
               <SocialMediaList />
-            </animated.div> */}
+            </animated.div>
           </div>
 
-          
+           */}
 
 
         </div>
