@@ -23,7 +23,7 @@ const ProfileImage = () => {
     query {
       file(name: { eq: "savio" }) {
         childImageSharp {
-          fixed(width: 313, height: 219, quality: 100) {
+          fixed(width: 313, height: 193, quality: 100) {
             ...GatsbyImageSharpFixed_withWebp
           }
         }
@@ -41,8 +41,7 @@ const ProfileImage = () => {
   return (
     <div
       sx={{
-        mb: 20,
-
+        mt: 34,
       }}
     >
         {savio?.file?.childImageSharp?.fixed && <Img sx={{ top: `8px`, marginRight: `5px` }} fixed={savio.file.childImageSharp.fixed} />} 
