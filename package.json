@@ -24,6 +24,8 @@
     "gatsby-plugin-netlify-cms": "^4.3.11",
     "gatsby-plugin-offline": "^3.0.1",
     "gatsby-plugin-sitemap": "^2.2.7",
+    "gatsby-source-filesystem": "^2.3.19",
+    "gatsby-transformer-remark": "^2.8.25",
     "netlify-cms": "^2.10.52",
     "netlify-cms-app": "^2.12.16",
     "react": "^16.13.1",

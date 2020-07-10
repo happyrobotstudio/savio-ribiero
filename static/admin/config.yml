@@ -15,5 +15,8 @@ collections:
           file: "content/home.md"
           fields:
             - {label: Title, name: title, widget: string}
-            - {label: Intro text, name: intro, widget: text}
+            - {label: Subtite, name: subtitle, widget: text}
+            - {label: About Savio text, name: aboutsavio, widget: text}
             - {label: Image, name: image, widget: image}
+            - {label: Contact Button Message, name: contactmessage, widget: text}
+            - {label: Contact Button Text, name: contacttext, widget: text}
