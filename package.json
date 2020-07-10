@@ -21,9 +21,10 @@
     "gatsby-plugin-google-analytics": "^2.1.13",
     "gatsby-plugin-manifest": "^2.2.13",
     "gatsby-plugin-netlify": "^2.1.11",
-    "gatsby-plugin-netlify-cms": "^4.3.10",
-    "gatsby-plugin-sitemap": "^2.2.7",
+    "gatsby-plugin-netlify-cms": "^4.3.11",
     "gatsby-plugin-offline": "^3.0.1",
+    "gatsby-plugin-sitemap": "^2.2.7",
+    "netlify-cms": "^2.10.52",
     "netlify-cms-app": "^2.12.16",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
